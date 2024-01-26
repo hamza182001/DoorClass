@@ -7,10 +7,13 @@ private:
 	bool islocked;
 public:
 	Door();
-	void openDoor();
-	void closeDoor() {
-		isOpen = false;
+	void openDoor() {
+		isOpen = true;
 	};
+	void closeDoor(){
+    isOpen=false;
+  };
+
 	void lockDoor();
 	void unlock();
 	bool isDoorOpen() const;
