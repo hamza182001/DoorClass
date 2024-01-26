@@ -7,7 +7,9 @@ private:
 	bool islocked;
 public:
 	Door();
-	void openDoor();
+	void openDoor() {
+		isOpen = true;
+	};
 	void closeDoor();
 	void lockDoor();
 	void unlock();
