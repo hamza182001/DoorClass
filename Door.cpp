@@ -10,7 +10,10 @@ public:
 	void openDoor() {
 		isOpen = true;
 	};
-	void closeDoor();
+	void closeDoor(){
+    isOpen=false;
+  };
+
 	void lockDoor();
 	void unlock();
 	bool isDoorOpen() const;
