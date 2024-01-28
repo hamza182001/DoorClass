@@ -14,8 +14,6 @@ public:
 		isOpen = false;
 	};
 
-
-
     void lockDoor() {
         if (!isOpen) { // Only lock if the door is closed
             islocked = true;
@@ -23,8 +21,13 @@ public:
         } else {
             cout << "Cannot lock the door while it is open.\n";
         }
+    } 
+  void unlock() {
+        islocked = false;
+        cout << "Door is unlocked.\n";
     }
-	void unlock();
+	
+
 
 
 
