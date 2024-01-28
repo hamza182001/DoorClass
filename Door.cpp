@@ -13,12 +13,23 @@ public:
 	void closeDoor(){
 		isOpen = false;
 	};
-	void lockDoor();
 
-    void unlock() {
+    void lockDoor() {
+        if (!isOpen) { // Only lock if the door is closed
+            islocked = true;
+            cout << "Door is locked.\n";
+        } else {
+            cout << "Cannot lock the door while it is open.\n";
+        }
+    } 
+  void unlock() {
         islocked = false;
         cout << "Door is unlocked.\n";
     }
+	
+
+
+
 
 	bool isDoorOpen() const{
 		if(isOpen == true){
