@@ -17,10 +17,8 @@ public:
 	void lockDoor();
 	void unlock();
 	bool isDoorOpen() const{
-		    return isDoorOpen;
 	};
 	bool isDoorLocked() const{
-		return isDoorLocked;
 	};
 
 
