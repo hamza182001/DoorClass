@@ -21,7 +21,14 @@ public:
            return false;
 		}
 	};
-	bool isDoorLocked() const;
+	bool isDoorLocked() const{
+			if(islocked == true){
+			return true;
+		}
+		else{
+           return false;
+		}
+	};
 
 
 };
