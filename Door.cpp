@@ -10,16 +10,18 @@ public:
 	void openDoor() {
 		isOpen = true;
 	};
-	void closeDoor(){
-    isOpen=false;
-  };
-
+	void closeDoor();
 	void lockDoor();
 	void unlock();
 	bool isDoorOpen() const{
+		if(isOpen == true){
+			return true;
+		}
+		else{
+           return false;
+		}
 	};
-	bool isDoorLocked() const{
-	};
+	bool isDoorLocked() const;
 
 
 };
